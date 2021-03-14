@@ -1,0 +1,11 @@
+apiVersion: kubepaas/v1beta
+kind: config
+metadata:
+  name: "matrix"
+  version: "v1.0.0"
+deploy:
+  runtime: "golang113"
+  port: "8000"
+  env:
+    - name: "PORT"
+      value: "8000"
